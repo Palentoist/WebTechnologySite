@@ -1,0 +1,66 @@
+#logo
+{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+#logo:hover
+{
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+#OptionsContainer
+{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    background-color: rgb(197, 197, 197);
+    margin-top: 20px;
+}
+
+.options
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.options:hover
+{
+    scale: 1.15;
+}
+
+#LogoContainer
+{
+    position:relative;         
+    display:inline-block;
+}
+
+#logoCaption
+{
+    position:absolute;
+    left:100%;                  
+    top:50%;
+    transform:translate(-10px, -50%); 
+    opacity:0;
+    pointer-events:none;
+    font-size:2rem;
+    font-weight:900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space:nowrap;
+    transition:transform .35s ease-out, opacity .35s ease-out;
+    z-index:-1;                
+}
+
+#LogoContainer:hover #logoCaption{
+    opacity:1;
+    transform:translate(30px, -50%); 
+    z-index:10;               
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaw's – Contact</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/logoShaw.png">
+    <link rel="stylesheet" href="./HomeStyles.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/logoShaw.png">
+    <link rel="stylesheet" href="./ContactStyles.css">
+</head>
+<body>
+    <div id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </div>
+    <nav id="sideMenu">
+        <a href="/HomePage.html">Profile</a>
+        <a href="Shop.html">Shop</a>
+        <a href="/Pages/Contact.html">Contact</a>
+        <a href="./About.html">About Us</a>
+    </nav>
+
+    <main class="contactWrap">
+        <h1>Get in Touch</h1>
+        <p class="tagline">Questions, collabs, or custom orders—drop us a line.</p>
+
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Subject
+                <input type="text" name="subject" required>
+            </label>
+
+            <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit" class="submitBtn">Send Message</button>
+        </form>
+
+        <aside class="info">
+            <h2>Other Ways to Reach Us</h2>
+            <p><strong>Email:</strong> hello@shaws.com</p>
+            <p><strong>Phone:</strong> +1 (555) 0123</p>
+            <p><strong>Hours:</strong> Mon–Fri 10am–6pm EST</p>
+        </aside>
+    </main>
+
+    <script src="./ContactScripts.js"></script>
+</body>
+</html>
