@@ -333,3 +333,36 @@ footer {
 .footer-links a:hover {
     color: var(--accent);
 }
+/* =====  Social fly-out  ===== */
+.has-flyout{ position:relative; display:inline-block; }
+
+.social-flyout{
+  position:absolute;
+  left:50%; top:100%;
+  transform:translateX(-50%) translateY(8px);
+  margin:0; padding:6px 0;
+  list-style:none;
+  background:#111;
+  border-radius:6px;
+  opacity:0;
+  pointer-events:none;
+  transition:.25s;
+  z-index:-1;          /* behind the nav bar */
+  box-shadow:0 5px 18px rgba(0,0,0,.35);
+}
+.social-flyout a{
+  display:block;
+  padding:6px 18px;
+  white-space:nowrap;
+  font-size:.95rem;
+  color:#fff;
+  text-decoration:none;
+}
+.social-flyout a:hover{ color:#c5c5c5; }
+
+/* reveal on hover */
+.has-flyout:hover .social-flyout{
+  opacity:1;
+  pointer-events:auto;
+  z-index:10;
+}

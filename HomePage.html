@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./Assets/logoShaw.png">
     <link rel="stylesheet" href="./HomeStyles.css">
 </head>
+
 <body>
     <nav>
         <div id="LogoContainer">
@@ -16,12 +18,21 @@
             <a class="options" href="./Pages/Home.html">Home</a>
             <a class="options" href="./Pages/Shop.html">Shop</a>
             <a class="options" href="./Pages/Contact.html">Contact</a>
-            <a class="options" href="./Pages/About.html">About Us</a>
+            <!-- ======  inside <nav> – replace the old About-Us line  ====== -->
+            <li class="has-flyout">
+                <a class="options" href="./Pages/About.html">About Us</a>
+                <ul class="social-flyout">
+                    <li><a href="https://instagram.com/shawsmode" target="_blank">Instagram</a></li>
+                    <li><a href="https://youtube.com/@syedshawaiz4371" target="_blank">YouTube</a></li>
+                    <li><a href="https://reddit.com/r/shawsmode" target="_blank">Reddit</a></li>
+                    <li><a href="https://discord.gg/shawsmode" target="_blank">Discord</a></li>
+                </ul>
+            </li>
         </div>
     </nav>
 
     <marquee class="neon-marquee" behavior="scroll" direction="left" scrollamount="6">
-        ✦  Free shipping over $75  ✦  New drops every Friday  ✦  Code: SHAW10 for 10 % off  ✦
+        ✦ Free shipping over $75 ✦ New drops every Friday ✦ Code: SHAW10 for 10 % off ✦
     </marquee>
 
     <section class="hero">
@@ -115,13 +126,15 @@
 
     <section class="insta-gallery">
         <div class="container">
-            <h2>As seen on Instagram <a href="https://instagram.com/shawsmode" target="_blank" style="color:var(--accent);">@shawsmode</a></h2>
+            <h2>As seen on Instagram <a href="https://instagram.com/shawsmode" target="_blank"
+                    style="color:var(--accent);">@shawsmode</a></h2>
             <div class="photos">
                 <img src="./HomePage Images/Instagram/1280w-55AYJRU7xwY.webp" alt="IG 1">
                 <img src="./HomePage Images/Instagram/1280w-ke9cjCquW9M.webp" alt="IG 2">
                 <img src="./HomePage Images/Instagram/1280w-UFeucDTXEjU.webp" alt="IG 3">
                 <img src="./HomePage Images/Instagram/320w-qu0SdBn7qKA.webp" alt="IG 4">
-                <img src="./HomePage Images/Instagram/modern-bold-minimalist-fashion-invitation-template_742173-17406.jpg" alt="IG 5">
+                <img src="./HomePage Images/Instagram/modern-bold-minimalist-fashion-invitation-template_742173-17406.jpg"
+                    alt="IG 5">
                 <img src="./HomePage Images/Instagram/images.jpeg" alt="IG 6">
             </div>
         </div>
@@ -144,17 +157,29 @@
         <div class="socials">
             <a href="https://www.instagram.com/mr_shawaiz001/" target="_blank" aria-label="Instagram">
                 <!-- simple IG svg -->
-                <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                </svg>
             </a>
             <a href="https://tiktok.com/@shawsmode" target="_blank" aria-label="TikTok">
                 <!-- simple TT svg -->
-                <svg viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.13 4.13 0 0 1 19 8.14v7.29a7.3 7.3 0 0 1-6.24 7.21 7.14 7.14 0 0 1-5.2-1.83 6.9 6.9 0 0 1-2.56-5.18c0-3.77 2.9-6.9 6.6-7.15.38-.02.76-.04 1.14-.04v3.32a2.94 2.94 0 0 0-1.14.22 3.3 3.3 0 0 0-2.2 3.05 3.27 3.27 0 0 0 3.34 3.23 3.25 3.25 0 0 0 3.3-3.23V8.14a8.44 8.44 0 0 0-4.53-7.32z"/></svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M16.6 5.82s.51.5 0 0A4.13 4.13 0 0 1 19 8.14v7.29a7.3 7.3 0 0 1-6.24 7.21 7.14 7.14 0 0 1-5.2-1.83 6.9 6.9 0 0 1-2.56-5.18c0-3.77 2.9-6.9 6.6-7.15.38-.02.76-.04 1.14-.04v3.32a2.94 2.94 0 0 0-1.14.22 3.3 3.3 0 0 0-2.2 3.05 3.27 3.27 0 0 0 3.34 3.23 3.25 3.25 0 0 0 3.3-3.23V8.14a8.44 8.44 0 0 0-4.53-7.32z" />
+                </svg>
             </a>
             <a href="https://twitter.com/shawsmode" target="_blank" aria-label="Twitter">
-                <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.55v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21c7.34 0 11.35-6.08 11.35-11.35 0-.17 0-.34-.01-.51.78-.57 1.45-1.28 1.98-2.08z"/></svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.55v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21c7.34 0 11.35-6.08 11.35-11.35 0-.17 0-.34-.01-.51.78-.57 1.45-1.28 1.98-2.08z" />
+                </svg>
             </a>
             <a href="https://www.youtube.com/@syedshawaiz4371" target="_blank" aria-label="YouTube">
-                <svg viewBox="0 0 24 24"><path d="M10 15v-4l5 2-5 2zm9-10c0-1.11-.89-2-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5zm-2 0L12 9 5 5h12z"/></svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M10 15v-4l5 2-5 2zm9-10c0-1.11-.89-2-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5zm-2 0L12 9 5 5h12z" />
+                </svg>
             </a>
         </div>
 
@@ -171,4 +196,5 @@
 
     <script src="./HomeScript.js"></script>
 </body>
+
 </html>
