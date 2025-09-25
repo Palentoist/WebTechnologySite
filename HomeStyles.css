@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-around;
     height: 40px;
-    background-color: rgb(197, 197, 197);
+   
     margin-top: 20px;
 }
 
@@ -326,7 +326,6 @@ footer {
 .footer-links a:hover {
     color: var(--accent);
 }
-/* =====  Social fly-out  ===== */
 .has-flyout{ position:relative; display:inline-block; }
 
 .social-flyout{
@@ -340,7 +339,7 @@ footer {
   opacity:0;
   pointer-events:none;
   transition:.25s;
-  z-index:-1;          /* behind the nav bar */
+  z-index:-1;          
   box-shadow:0 5px 18px rgba(0,0,0,.35);
 }
 .social-flyout a{
@@ -353,7 +352,7 @@ footer {
 }
 .social-flyout a:hover{ color:#c5c5c5; }
 
-/* reveal on hover */
+
 .has-flyout:hover .social-flyout{
   opacity:1;
   pointer-events:auto;
@@ -380,11 +379,19 @@ footer {
   border:2px solid #000;
   border-radius:50%;
   box-shadow:0 0 10px rgba(0,0,0,.25);
+  transition: 0.5s;
 }
 
+.logo-line #logo:hover{
+  height:70px;              
+  border:2px solid #000;
+  border-radius:50%;
+  box-shadow:0 0 10px rgba(0,0,0,2);
+  transform: scale(1.1);
+}
 
 .sticky-header nav{
-  background:rgb(197,197,197);
+  background:rgba(197,197,197 , 0.1);
   padding:10px 0;
 }
 
